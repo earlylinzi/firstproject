@@ -1,4 +1,4 @@
-package multiThread;
+package com.myutil.duoxiancheng;
 
 import java.util.concurrent.TimeUnit;
 
@@ -31,7 +31,6 @@ public class ShutDown {
         private volatile static boolean on = true;
 
 
-        @Override
         public void run() {
             while(on && !Thread.currentThread().isInterrupted()){
                 i++;

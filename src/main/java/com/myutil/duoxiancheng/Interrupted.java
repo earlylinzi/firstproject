@@ -1,6 +1,8 @@
-package multiThread;
+package com.myutil.duoxiancheng;
 
 import java.util.concurrent.TimeUnit;
+
+import com.myutil.duoxiancheng.SleepUtils;
 
 public class Interrupted {
     public static void main(String[] args) throws Exception {
@@ -32,16 +34,14 @@ public class Interrupted {
 
     //一直处于沉睡的线程
     static class SleepRunner implements Runnable{
-        @Override
         public void run(){
             while (true){
-                SleepUtil.second(10);
+                SleepUtils.second(10);
             }
         }
     }
     //一直处于忙碌的线程
     static class BusyRunner implements Runnable{
-        @Override
         public void run(){
             while (true){
 
