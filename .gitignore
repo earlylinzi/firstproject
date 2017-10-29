@@ -12,5 +12,4 @@ target/
 .externalToolBuilders/
 gradle/
 .DS_Store
-这里是制造冲突的地方
 *.iml
