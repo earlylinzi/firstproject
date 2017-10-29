@@ -11,3 +11,4 @@ target/
 .svn/
 .externalToolBuilders/
 gradle/
+*.iml
