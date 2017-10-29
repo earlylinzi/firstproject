@@ -14,7 +14,7 @@
 		<dependency>
 		    <groupId>com.sfbest.shoppingorder.mailservice</groupId>
 		    <artifactId>mailservice-domain</artifactId>
-		    <version>1.0.5.release</version>
+		    <version>1.0.3.release</version>
 		</dependency>
 		<dependency>
 			<groupId>com.caucho</groupId>
