@@ -3,7 +3,7 @@ package com.myutil.duoxiancheng;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 这两种通过中断或者标识的操作能够在终止的时候有机会去清理资源而不是武断的将线程停止
+ * 这两种通过中断(调用interrupt()方法)或者标识(程序控制)的操作能够在终止的时候有机会去清理资源而不是武断的将线程停止
  * 这种将线程停止的方式显得更加的优雅
  */
 public class ShutDown {

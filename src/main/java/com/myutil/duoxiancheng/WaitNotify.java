@@ -20,6 +20,12 @@ public class WaitNotify {
 		Thread[notifyThread,5,main] hold lock. notify @ 15:41:32
 		Thread[WaitThread,5,main] flag is false.running@ 15:41:37
 		Thread[notifyThread,5,main] hold lock again. sleep @ 15:41:37
+
+
+	 Thread[WaitThread,5,main] flag is true.wait@ 17:31:01
+	 Thread[notifyThread,5,main] hold lock. notify @ 17:31:01
+	 Thread[notifyThread,5,main] hold lock again. sleep @ 17:31:06
+	 Thread[WaitThread,5,main] flag is false.running@ 17:31:11
 	 *
 	 */
 	
@@ -54,8 +60,8 @@ public class WaitNotify {
 				// 获取lock的锁  然后进行通知  通知的时候不会释放lock的锁
 				// 直到当前线程释放了lock后  waitThread才能从wait()方法中返回
 				System.out.println(Thread.currentThread() + " hold lock. notify @ "+new SimpleDateFormat("HH:mm:ss").format(new Date()));
-				lock.notifyAll();//如果不设置这一步的话Wait线程将一直处于等待状态
 				flag = false;
+				lock.notifyAll();//如果不设置这一步的话Wait线程将一直处于等待状态
 				SleepUtils.second(5);
 			}
 			
