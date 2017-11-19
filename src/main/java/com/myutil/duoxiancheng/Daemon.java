@@ -8,6 +8,7 @@ public class Daemon {
 
         Thread thread = new Thread(new DaemonRunner(),"DaemonRunner");
         thread.setDaemon(true);
+        System.out.println("cceshi");
         thread.start();
     }
     //在构建Daemon线程的时候  不能依靠finally  块中的内容来确保执行清理或者释放资源的逻辑
