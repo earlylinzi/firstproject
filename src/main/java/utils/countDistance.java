@@ -18,10 +18,10 @@ public class countDistance {
     /**
      * 根据两个位置的经纬度，来计算两地的距离（单位为KM）
      * 参数为String类型
-     * @param lat1 用户经度
-     * @param lng1 用户纬度
-     * @param lat2 商家经度
-     * @param lng2 商家纬度
+     * lat1 用户经度
+     * param lng1 用户纬度
+     * param lat2 商家经度
+     * param lng2 商家纬度
      * @return
      */
     public static Double getDistance(String lat1Str, String lng1Str, String lat2Str, String lng2Str) {
@@ -86,7 +86,10 @@ public class countDistance {
     public static void main(String[] args) {
         //测试经纬度：117.11811  36.68484
         //测试经纬度2：117.00999000000002  36.66123
-        System.out.println(getDistance("119.11913","37.68484","118.11913","36.68484"));
+        System.out.println(getDistance("116.604547","39.898786","116.430484","39.921399"));
+        System.out.println(getDistance("116.430484","39.921399","116.604547","39.898786"));
+        System.out.println(getDistance("39.898786","116.604547","39.921399","116.430484"));
+        System.out.println(getDistance("39.921399","116.430484","39.898786","116.604547"));
 
 //        System.out.println(getAround("117.11811", "36.68484", "13000"));
         //117.01028712333508(Double), 117.22593287666493(Double),
