@@ -20,7 +20,7 @@ public class BankWaterService implements Runnable{
     /**
      * 保存每个sheet计算出来的银流结果
      */
-    private ConcurrentHashMap<String,Integer> sheetBankWaterCount = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<String,Integer> sheetBankWaterCount = new ConcurrentHashMap<String,Integer>();
 
     /**
      * 最终的计算方法
