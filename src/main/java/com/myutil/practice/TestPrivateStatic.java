@@ -17,7 +17,12 @@ public class TestPrivateStatic {
     }};
 
     public static void main(String[] args) {
-        System.out.println(A);
+
+       String s = "源{}9;检测{|}美国{}4;检测{}提高{|}";
+        String[] split = s.split("\\{\\|\\}");
+        System.out.println(split[1]);
+
+
     }
 
 }
