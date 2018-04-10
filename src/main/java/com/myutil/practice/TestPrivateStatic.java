@@ -1,5 +1,6 @@
 package com.myutil.practice;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,11 +19,19 @@ public class TestPrivateStatic {
 
     public static void main(String[] args) {
 
-       String s = "源{}9;检测{|}美国{}4;检测{}提高{|}";
-        String[] split = s.split("\\{\\|\\}");
-        System.out.println(split[1]);
+//       String s = "源{}9;检测{|}美国{}4;检测{}提高{|}";
+//        String[] split = s.split("\\{\\|\\}");
+//        System.out.println(split[1]);
 
 
+
+    }
+    public static int getSecondTimestamp(Date date){
+        if (null == date) {
+            return 0;
+        }
+        String timestamp = String.valueOf(date.getTime()/1000);
+        return Integer.valueOf(timestamp);
     }
 
 }
